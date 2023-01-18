@@ -1,0 +1,14 @@
+<Form>
+<table>
+  <tr>
+    <td>Location:</td>
+    <td>X: <input type="number" name="locationx" id="locationx" [(ngModel)]="position.x"> </td>
+    <td>Y: <input type="number" name="locationy" id="locationy" [(ngModel)]="position.y"></td>
+    <td> <select name="id" id="id" [(ngModel)]="id">
+      <option *ngFor="let activeDrone of getActiveDrones()">{{activeDrone.id}}</option>
+    </select> </td>
+    <td> <button (click)="fly()">Fly</button> </td>
+  </tr>
+</table>
+</Form>
+<button routerLink="/drones">Navigate to Drones</button>
