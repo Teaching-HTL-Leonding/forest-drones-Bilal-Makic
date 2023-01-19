@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\makic\\Documents\\GitHub\\forest-drones-Bilal-Makic\\DroneApi\\DroneApi.csproj": {}
+    "C:\\Users\\makic\\OneDrive\\Documents\\GitHub\\forest-drones-Bilal-Makic\\DroneApi\\DroneApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\makic\\Documents\\GitHub\\forest-drones-Bilal-Makic\\DroneApi\\DroneApi.csproj": {
+    "C:\\Users\\makic\\OneDrive\\Documents\\GitHub\\forest-drones-Bilal-Makic\\DroneApi\\DroneApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\makic\\Documents\\GitHub\\forest-drones-Bilal-Makic\\DroneApi\\DroneApi.csproj",
+        "projectUniqueName": "C:\\Users\\makic\\OneDrive\\Documents\\GitHub\\forest-drones-Bilal-Makic\\DroneApi\\DroneApi.csproj",
         "projectName": "DroneApi",
-        "projectPath": "C:\\Users\\makic\\Documents\\GitHub\\forest-drones-Bilal-Makic\\DroneApi\\DroneApi.csproj",
+        "projectPath": "C:\\Users\\makic\\OneDrive\\Documents\\GitHub\\forest-drones-Bilal-Makic\\DroneApi\\DroneApi.csproj",
         "packagesPath": "C:\\Users\\makic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\makic\\Documents\\GitHub\\forest-drones-Bilal-Makic\\DroneApi\\obj\\",
+        "outputPath": "C:\\Users\\makic\\OneDrive\\Documents\\GitHub\\forest-drones-Bilal-Makic\\DroneApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\makic\\AppData\\Roaming\\NuGet\\NuGet.Config",

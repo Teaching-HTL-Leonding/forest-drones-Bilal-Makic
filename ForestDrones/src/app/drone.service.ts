@@ -15,11 +15,19 @@ export interface Position {
   y: number
 }
 
+export interface ScanRoot {
+  dronePosition: Position
+  damagedTrees: Position[]
+}
 
 @Injectable({
   providedIn: 'root'
 })
 export class DroneService {
+
+  public drones?: DroneStatus[];
+
+
 
   constructor(private httpClient: HttpClient) { }
 
@@ -40,6 +48,15 @@ export class DroneService {
   }
 
   public flyDrone(id: number, position: Position){
-    return this.httpClient.post(`http://localhost:5110/drones/${id}/flyTo`, position)
+    return this.httpClient.post(`http://localhost:5110/drones/${id}/flyTo`, {
+      "x": position.x,
+      "y": position.y
+    })
   }
+
+  public scanTrees(id: number){
+    console.log(`http://localhost:5110/drones/${id}/scan`)
+    return this.httpClient.get(`http://localhost:5110/drones/${id}/scan`)
+  }
+
 }

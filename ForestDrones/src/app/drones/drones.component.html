@@ -6,9 +6,9 @@
     <th>Deactivate</th>
     <th>Location X</th>
     <th>Location Y</th>
-    <tr *ngFor="let drone of drones; let i = index">
+    <tr *ngFor="let drone of getDrones(); let i = index">
       <td>{{drone.id}}</td>
-      <td>{{drone.isActive}}</td>
+      <td>{{getStatus(i)}}</td>
       <td><button class="activateButton" [disabled]="drone.isActive" (click)="activate(i + 1)">Activate</button></td>
       <td><button class="disableButton" [disabled]="!drone.isActive" (click)="deactivate(i + 1)">Deactivate</button></td>
       <td>{{drone.position?.x}}</td>

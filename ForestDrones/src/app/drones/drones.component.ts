@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./drones.component.css']
 })
 export class DronesComponent implements OnInit {
-  public drones?: DroneStatus[];
+
 
   constructor(private droneService: DroneService) {
   }
@@ -15,7 +15,7 @@ export class DronesComponent implements OnInit {
   ngOnInit(): void {
     this.droneService.getDroneStatus().subscribe(
       (droneStatus) => {
-        this.drones = droneStatus
+        this.droneService.drones = droneStatus
       }
     );
   }
@@ -36,4 +36,18 @@ export class DronesComponent implements OnInit {
     )
   }
 
+  public getStatus(id: number){
+      if(this.droneService.drones != undefined){
+        if(this.droneService.drones[id].isActive){
+          return "Active"
+        }
+        else
+        return "Deactivated"
+      }
+      return "Drone is undefined";
+  }
+
+  public getDrones(){
+    return this.droneService.drones;
+  }
 }

@@ -11,4 +11,24 @@
   </tr>
 </table>
 </Form>
+
+<Form>
+  <h1>Scan</h1>
+  <table>
+    <tr>
+      <th> <select name="scanId" id="scanId" [(ngModel)]="scanId">
+        <option *ngFor="let activeDrone of getActiveDrones()">{{activeDrone.id}}</option>
+      </select></th>
+      <th> <button (click)="scan()">Scan</button> </th>
+    </tr>
+    <tr>
+      <th>X</th>
+      <th>Y</th>
+    </tr>
+    <tr *ngFor="let tree of scannedTrees">
+      <td>{{tree.x}}</td>
+      <td>{{tree.y}}</td>
+    </tr>
+  </table>
+</Form>
 <button class="navigateButton" routerLink="/drones">Navigate to Drones</button>
