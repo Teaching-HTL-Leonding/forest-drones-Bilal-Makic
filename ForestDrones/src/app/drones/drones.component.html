@@ -9,8 +9,8 @@
     <tr *ngFor="let drone of drones; let i = index">
       <td>{{drone.id}}</td>
       <td>{{drone.isActive}}</td>
-      <td><button [disabled]="drone.isActive" (click)="activate(i + 1)">Activate</button></td>
-      <td><button [disabled]="!drone.isActive" (click)="deactivate(i + 1)">Deactivate</button></td>
+      <td><button class="activateButton" [disabled]="drone.isActive" (click)="activate(i + 1)">Activate</button></td>
+      <td><button class="disableButton" [disabled]="!drone.isActive" (click)="deactivate(i + 1)">Deactivate</button></td>
       <td>{{drone.position?.x}}</td>
       <td>{{drone.position?.y}}</td>
     </tr>

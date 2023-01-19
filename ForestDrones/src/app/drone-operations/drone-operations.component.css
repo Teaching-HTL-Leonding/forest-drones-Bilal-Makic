@@ -1,10 +1,25 @@
-table,
-td {
-    border: 1px solid #333;
+table {
+	border-collapse: collapse;
+    font-family: Tahoma, Geneva, sans-serif;
 }
 
-thead,
-tfoot {
-    background-color: #333;
-    color: #fff;
+table td {
+  padding: 15px;
+	background-color: #54585d;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 13px;
+	border: 1px solid #54585d;
+}
+
+button {
+  margin: 10px
+}
+
+.flyButton{
+  padding: 5px;
+  background-color: green;
+  color: white;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

@@ -1,10 +1,41 @@
-table,
-td {
-    border: 1px solid #333;
+table {
+	border-collapse: collapse;
+    font-family: Tahoma, Geneva, sans-serif;
 }
 
-thead,
-tfoot {
-    background-color: #333;
-    color: #fff;
+table  td {
+  padding: 15px;
+	background-color: #54585d;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 13px;
+	border: 1px solid white;
+}
+
+table  tr {
+	background-color: #f9fafb;
+}
+
+table th {
+  padding: 10px;
+}
+
+.activateButton{
+  background-color: green;
+  color: white;
+  border-color: green;
+}
+
+.activateButton:disabled {
+  opacity: 0.3;
+}
+
+.disableButton {
+  background-color: red;
+  color: white;
+  border-color: red;
+}
+
+.disableButton:disabled {
+  opacity: 0.3;
 }

@@ -7,7 +7,7 @@
     <td> <select name="id" id="id" [(ngModel)]="id">
       <option *ngFor="let activeDrone of getActiveDrones()">{{activeDrone.id}}</option>
     </select> </td>
-    <td> <button (click)="fly()">Fly</button> </td>
+    <td> <button class="flyButton" (click)="fly()">Fly</button> </td>
   </tr>
 </table>
 </Form>
